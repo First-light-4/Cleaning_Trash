@@ -60,9 +60,9 @@ class All_clean:
             return False
 
 # на вход  подаётся csv файл, содержащий строки
-with open(rf'C:\Users\vsavchenko\Desktop\Date_Output.csv') as file_input:
+with open(rf'C:\.....\Date_Output.csv') as file_input:
     # то что не является мусором будет сохранятся в отдельный финальный файл
-    with open(rf'C:\Users\vsavchenko\Desktop\Date_Final.csv', 'a') as file_output:
+    with open(rf'C:\.....\Date_Final.csv', 'a') as file_output:
         f = file_input.readlines()
         tr = []
         count = 0
@@ -86,6 +86,6 @@ with open(rf'C:\Users\vsavchenko\Desktop\Date_Output.csv') as file_input:
                 trash.append(f[i])
                 print(f[i])
         # запись всего мусора в отдельный файл
-        with open(rf'C:\Users\vsavchenko\Desktop\Date_Trash.csv', 'a') as file_trash:
+        with open(rf'C:\.....\Date_Trash.csv', 'a') as file_trash:
             file_trash.writelines(trash)
         print(count)
